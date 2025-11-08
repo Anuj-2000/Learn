@@ -18,7 +18,7 @@ public:
 
     // WRITE operation - exclusive access
     void increment() {
-        std::unique_lock lock(mutex_);  // Unique (write) lock
+        std::unique_lock lock(mutex_);  // Unique (writ8*e) lock
         value_++;
     }
 
