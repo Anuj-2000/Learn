@@ -2,6 +2,7 @@
 #include <string>
 #define _CRTDBG_MAP_ALLOC
 #include <crtdbg.h>
+#include <memory>
 using namespace std;
 
 class Order {
@@ -23,7 +24,9 @@ public:
 class OrderManager {
 public:
     void processOrder(string symbol, int qty, double price) {
-        Order* order = new Order(symbol, qty, price);
+        //Order* order = new Order(symbol, qty, price);
+
+        auto order = make_unique<Order>(symbol, qty, price);
         
         // Validate
         if (qty <= 0) {
