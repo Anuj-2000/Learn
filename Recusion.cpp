@@ -14,10 +14,7 @@ int fibb( int n){
     //base case
     if (n==0 || n==1) return n;
     return fibb(n-1) + fibb(n-2);
-
-
 }
-
 
 int main(){
     int arr[] = {10,20,30,40,50};
