@@ -18,6 +18,7 @@ int fibb( int n){
 
 int main(){
     int arr[] = {10,20,30,40,50};
-    //printArr(arr,5); 
-    cout<<fibb(5)<<" ";
+    int ans = fibb(5);
+    cout<<ans<<endl;
 }
+
