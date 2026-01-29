@@ -42,8 +42,8 @@ int main() {
     
     // Exercise 5: Memory leak detection
     // TODO: Intentionally create a leak, then fix it
-    //int* leak = new int[100];
-    // Fix: delete[] leak;
+    int* leak = new int[100];
+    Fix: delete[] leak;
     
     return 0;
 }
