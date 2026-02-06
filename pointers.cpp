@@ -44,7 +44,6 @@ int main() {
     // TODO: Intentionally create a leak, then fix it
     int* leak = new int[100];
     // Fix: 
-    delete[] leak;
-    
+    delete[] leak;   
     return 0;
 }
